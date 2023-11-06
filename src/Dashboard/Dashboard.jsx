@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { Dialog, Menu, Transition } from "@headlessui/react";
 import {
-  ClockIcon,
+  AcademicCapIcon,
   CogIcon,
   CreditCardIcon,
   HomeIcon,
@@ -10,6 +10,7 @@ import {
   ScaleIcon,
   ShieldCheckIcon,
   XIcon,
+  UserIcon,
 } from "@heroicons/react/outline";
 import {
   CashIcon,
@@ -20,8 +21,8 @@ import {
 
 const navigation = [
   { name: "Home", href: "#", icon: HomeIcon, current: true },
-  { name: "Students", href: "#", icon: ClockIcon, current: false },
-  { name: "Volunteers", href: "#", icon: ScaleIcon, current: false },
+  { name: "Students", href: "#", icon: AcademicCapIcon, current: false },
+  { name: "Volunteers", href: "#", icon: UserIcon, current: false },
   { name: "Donors", href: "#", icon: CreditCardIcon, current: false },
 ];
 const secondaryNavigation = [
@@ -46,7 +47,6 @@ const transactions = [
     date: "July 11, 2020",
     datetime: "2020-07-11",
   },
-  // More transactions...
 ];
 const statusStyles = {
   success: "bg-green-100 text-green-800",
@@ -265,7 +265,7 @@ export default function Example() {
                       id="search-field"
                       name="search-field"
                       className="block w-full h-full pl-8 pr-3 py-2 border-transparent text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-transparent sm:text-sm"
-                      placeholder="Search transactions"
+                      placeholder="Search"
                       type="search"
                     />
                   </div>
